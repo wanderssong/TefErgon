@@ -2,6 +2,16 @@ function toggleMenu() {
     document.body.classList.toggle('menu-open');
 }
 
+// Fechar o menu ao clicar fora dele
+document.addEventListener('click', function(event) {
+    const menu = document.getElementById('dropdownMenu');
+    const menuIcon = document.querySelector('.menu-icon button');
+
+    if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+        document.body.classList.remove('menu-open');
+    }
+});
+
 // Função principal para redirecionar para o WhatsApp com uma mensagem específica
 function redirectToWhatsApp(option) {
     let message = "";
