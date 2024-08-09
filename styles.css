@@ -11,6 +11,8 @@ body {
     color: #333;
     padding: 10px;
     margin: 0;
+    padding-top: 60px; /* Ajuste este valor de acordo com a altura do header */
+    
 }
 
 header {
@@ -18,10 +20,19 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
+    background-color: #fff; /* Cor de fundo do header */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 10px 20px; /* Espaçamento interno */
+    position: fixed; /* Torna o header fixo no topo da página */
+    top: 0; /* Mantém o header no topo */
+    left: 0;
+    right: 0;
+    z-index: 100; /* Garante que o header esteja acima de outros elementos */
+    
 }
 
 .logo img {
-    max-height: 50px;
+    max-height: 55px;
 }
 
 .menu-icon button {
@@ -92,7 +103,7 @@ header {
 }
 
 .benefit-number {
-    background-color: #88B04B;
+    background-color: #00d9ed;
     color: #fff;
     font-size: 20px;
     width: 40px;
