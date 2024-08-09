@@ -156,6 +156,7 @@ footer {
     padding: 20px;
     text-align: center;
     margin-top: 20px;
+    
 }
 
 .footer-content {
@@ -178,4 +179,38 @@ footer {
 
 .footer-phone {
     line-height: 1.6;
+}
+
+.advantage-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.advantage-content {
+    width: 300px; /* Defina a largura do quadrado */
+    height: 280px; /* Defina a altura do quadrado */
+    background-color: #ffffff; /* Cor de fundo do quadrado */
+    border-radius: 8px; /* Bordas arredondadas */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.advantage-image {
+    width: 100px; /* Tamanho da imagem */
+    height: auto;
+    margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+}
+
+.advantage-title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.advantage-text {
+    font-size: 14px;
+    color: #666;
 }
