@@ -1,5 +1,5 @@
 function toggleMenu() {
-    alert('Menu clicked! Aqui você pode implementar a lógica de abrir um menu lateral ou dropdown.');
+    alert('Menu clicked! Aqui colocarei a logica.');
 }
 
 function redirectToWhatsApp() {
