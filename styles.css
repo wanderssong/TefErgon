@@ -6,7 +6,229 @@
 }
 
 body {
+    font-family: Arial, sans-serif;* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    margin: 0;
+    padding-top: 60px; /* Ajuste este valor de acordo com a altura do header */
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #fff; /* Cor de fundo do header */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 10px 20px; /* Espaçamento interno */
+    position: fixed; /* Torna o header fixo no topo da página */
+    top: 0; /* Mantém o header no topo */
+    left: 0;
+    right: 0;
+    z-index: 100; /* Garante que o header esteja acima de outros elementos */
+    
+}
+
+.logo img {
+    max-height: 55px;
+}
+
+.menu-icon button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    top: 60px; /* Ajuste com base na altura do header */
+    right: 20px; /* Posicionado próximo ao botão de menu */
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 101;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+}
+.dropdown-menu a:hover {
+    background-color: #f2f2f2; /* Cor de fundo ao passar o mouse */
+}
+
+/* Exibir o menu dropdown quando ativado */
+.menu-open .dropdown-menu {
+    display: block;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.content h1 {
+    color: #004d40;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.content p {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #00d9ed;
+    color: #fffdfd;
+    font-size: 20px;
+    padding: 10px 55px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #04063f;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp-icon img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* Estilo da Seção de Benefícios */
+.benefits {
+    padding: 20px;
+}
+
+.benefits h2 {
+    font-size: 22px;
+    color: #006F51;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.benefit {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.benefit-number {
+    background-color: #00d9ed;
+    color: #fff;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.benefit h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.benefit p {
+    font-size: 16px;
+    color: #666;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    margin-bottom: 15px;
+}
+
+.tef {
+    width: 350px; /* Ajuste o tamanho conforme necessário */
+    text-align: center;
+    padding: 20px;
+    margin-left: 35%;
+}
+
+.footer-address,
+.footer-phone,
+.footer-system {
+    color: #333;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-phone {
+    line-height: 1.6;
+}
+
+.advantage-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.advantage-content {
+    width: 300px; /* Defina a largura do quadrado */
+    height: 280px; /* Defina a altura do quadrado */
+    background-color: #f1f0f0; /* Cor de fundo do quadrado */
+    border-radius: 8px; /* Bordas arredondadas */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.advantage-image {
+    width: 100px; /* Tamanho da imagem */
+    height: auto;
+    margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+}
+
+.advantage-title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.advantage-text {
+    font-size: 14px;
+    color: #666;
+}
     background-color: #fff;
     color: #333;
     padding: 10px;
