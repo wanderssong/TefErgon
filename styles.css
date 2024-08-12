@@ -173,7 +173,7 @@ footer {
     width: 250px; /* Ajuste o tamanho conforme necessário */
     text-align: center;
     padding: 20px;
-    margin-left: 30%;
+    margin: 0 auto;
 }
 
 .footer-address,
